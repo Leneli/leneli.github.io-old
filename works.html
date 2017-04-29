@@ -16,7 +16,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
-		<div class="main-menu"><a class="icon-close icon-close_right" href="#">
+		<div class="main-menu" id="main-menu"><a class="icon-close icon-close_right" href="#">
 				<svg class="svg_white" viewBox="0 0 36 36">
 					<use xlink:href="assets/img/sprite.svg#close"></use>
 				</svg></a>
@@ -42,10 +42,10 @@
 									<svg class="svg_white-green" viewBox="0 0 31 22">
 										<use xlink:href="assets/img/sprite.svg#in"></use>
 									</svg></a></li>
-						</ul><a class="arrow-down" href="#">
-													<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
-														<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-													</svg></a><a class="hamburger" href="#">
+						</ul><a class="arrow-down arrow_head" href="#">
+							<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
+								<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+							</svg></a><a class="hamburger" href="#main-menu">
 													<svg class="svg_white" viewBox="0 0 40 35">
 														<use xlink:href="assets/img/sprite.svg#hamburger"></use>
 													</svg></a>
@@ -60,41 +60,57 @@
 					</svg>
 				</header>
 				<main class="main">
-					<section class="section_works">
-						<h1 class="h1_underline text-center">Мои работы</h1>
-						<div class="slider columns_two">
-							<div class="s1">
-								<h2 class="h2_underline">Сайт школы онлайн Образования</h2>
-							</div>
-							<div class="s2">Slider</div>
-						</div>
+					<section class="section-bg_works">
+						<h1 class="title_works">Мои работы</h1>
 					</section>
-					<section class="section">
-						<h1 class="h1_underline text-center">Что обо мне говорят</h1>
-						<div class="opinions columns_two">
-							<div class="opinions__item">
-								<div class="quote_center"><img src="/assets/img/content/9.png" alt="">
-									<p class="quote__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
-									<div>
-										<p class="quote__accent">Сабанцев Владимир</p>
-										<p class="quote__author">преподаватель</p>
-									</div>
+					<div class="slider">
+						<div class="slider__picture"><img src="/assets/img/works/work-2.png" alt="test"></div>
+						<div class="slider__desc">
+							<h2 class="subtitle work__title">Сайт школы онлайн образования</h2><span class="work__tech">HTML, CSS, JavaScript</span><a class="work__link" href="#">Просмотреть сайт</a>
+						</div>
+						<div class="slider__nav">
+							<div class="slider__btn"><img src="/assets/img/works/work-1.png" alt="test">
+													<div class="slider__btn_top prew">
+														<div class="slider_arrow ">
+																					<svg class="svg_white" viewBox="0 0 25.18 16.164">
+																						<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+																					</svg>
+														</div>
+													</div>
+							</div>
+							<div class="slider__btn"><img src="/assets/img/works/work-3.png" alt="test">
+													<div class="slider__btn_top next">
+														<div class="slider_arrow arrow_up">
+																					<svg class="svg_white" viewBox="0 0 25.18 16.164">
+																						<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+																					</svg>
+														</div>
+													</div>
+							</div>
+						</div>
+					</div>
+					<section>
+						<h1 class="title_speak">Что обо мне говорят</h1>
+						<div class="quotes">
+							<div class="quote__item"><img src="/assets/img/content/9.png" alt="">
+								<p class="quote__text_bg">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
+								<div>
+									<p class="quote__author quote_accent">Сабанцев Владимир</p>
+									<p class="quote__author quote_d">преподаватель</p>
 								</div>
 							</div>
-							<div class="opinions__item">
-								<div class="quote_center"><img src="/assets/img/content/9.png" alt="">
-									<p class="quote__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
-									<div>
-										<p class="quote__accent">Сабанцев Владимир</p>
-										<p class="quote__author">преподаватель</p>
-									</div>
+							<div class="quote__item"><img src="/assets/img/content/9.png" alt="">
+								<p class="quote__text_bg">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
+								<div>
+									<p class="quote__author quote_accent">Сабанцев Владимир</p>
+									<p class="quote__author quote_d">преподаватель</p>
 								</div>
 							</div>
 						</div>
 						<div class="section_center">
 							<div class="form form_light">
 								<div class="form__content">
-									<h2 class="h2_underline">Связаться со мной</h2>
+									<h2 class="subtitle">Связаться со мной</h2>
 									<form>
 										<input class="input" value="Test">
 										<input class="input">
@@ -131,9 +147,9 @@
 						</ul>
 					</div>
 					<div class="footer__col">
-						<div class="quote_footer">
+						<div class="quote-footer">
 							<p class="quote__text">Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
-							<p class="quote__author">Martin Golding</p>
+							<p class="quote__author quote_d">Martin Golding</p>
 						</div>
 					</div>
 				</div>

@@ -16,7 +16,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
-		<div class="main-menu"><a class="icon-close icon-close_right" href="#">
+		<div class="main-menu" id="main-menu"><a class="icon-close icon-close_right" href="#">
 				<svg class="svg_white" viewBox="0 0 36 36">
 					<use xlink:href="assets/img/sprite.svg#close"></use>
 				</svg></a>
@@ -42,10 +42,10 @@
 									<svg class="svg_white-green" viewBox="0 0 31 22">
 										<use xlink:href="assets/img/sprite.svg#in"></use>
 									</svg></a></li>
-						</ul><a class="arrow-down" href="#">
-													<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
-														<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-													</svg></a><a class="hamburger" href="#">
+						</ul><a class="arrow-down arrow_head" href="#">
+							<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
+								<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+							</svg></a><a class="hamburger" href="#main-menu">
 													<svg class="svg_white" viewBox="0 0 40 35">
 														<use xlink:href="assets/img/sprite.svg#hamburger"></use>
 													</svg></a>
@@ -60,22 +60,21 @@
 					</svg>
 				</header>
 				<main class="main">
-					<div class="columns_two">
-						<section class="section_about columns_two">
-							<div>
-								<h1 class="h1_underline text-center">Обо мне</h1>
+					<section class="about">
+						<section class="about__item_l section-bg_about">
+							<div class="about__item_up">
+								<h1 class="title_about">Обо мне</h1>
 							</div>
 							<div><img class="userpic undefined" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/>
-								<h2 class="h2_underline text-center">Кто я</h2>
+								<h2 class="subtitle">Кто я</h2>
 								<div class="about-text">
-									<p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+									<p class="paragraph">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
 								</div>
 							</div>
 						</section>
-						<section class="section_skills">
-							<h2 class="h2_underline text-center">Чем я могу быть вам полезен</h2>
-							<p></p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-							<p class="h2">Frontend</p>
+						<section class="about__item_r section-bg_skills">
+							<h2 class="subtitle">Чем я могу быть вам полезен</h2>
+							<p class="paragraph">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</p><span class="skills__group-name">Frontend</span>
 							<ul class="skills">
 								<li class="skills__item"><span class="skills__name">HTML5</span>
 									<svg class="circles" viewbox="0 0 110 110">
@@ -95,8 +94,7 @@
 										<circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
 									</svg>
 								</li>
-							</ul>
-							<p class="h2">Backend</p>
+							</ul><span class="skills__group-name">Backend</span>
 							<ul class="skills">
 								<li class="skills__item"><span class="skills__name">PHP</span>
 									<svg class="circles" viewbox="0 0 110 110">
@@ -122,8 +120,7 @@
 										<circle class="circle__second circle-20" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
 									</svg>
 								</li>
-							</ul>
-							<p class="h2">WorkFlow</p>
+							</ul><span class="skills__group-name">WorkFlow</span>
 							<ul class="skills">
 								<li class="skills__item"><span class="skills__name">Git</span>
 									<svg class="circles" viewbox="0 0 110 110">
@@ -145,11 +142,11 @@
 								</li>
 							</ul>
 						</section>
-					</div>
+					</section>
 					<section class="section_map">
 						<div class="map">
 							<div class="contacts">
-								<h2 class="h2_underline text-center">Контакты</h2>
+								<h2 class="subtitle">Контакты</h2>
 								<ul class="contacts__ul">
 									<li class="contacts__li">
 																<svg class="contacts__icon" viewBox="0 0 24 24">
@@ -201,9 +198,9 @@
 						</ul>
 					</div>
 					<div class="footer__col">
-						<div class="quote_footer">
+						<div class="quote-footer">
 							<p class="quote__text">Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
-							<p class="quote__author">Martin Golding</p>
+							<p class="quote__author quote_d">Martin Golding</p>
 						</div>
 					</div>
 				</div>
