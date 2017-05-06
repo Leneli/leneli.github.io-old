@@ -24,16 +24,18 @@
 							<form class="login-form">
 								<input class="input" type="text" value="login"/>
 								<input class="input" type="password" value="password"/>
-								<label>
-									<input type="checkbox"/>Я человек
-								</label>
-								<p>Вы точно не робот?</p>
-								<label>
-									<input type="radio" name="iman"/>Да
-								</label>
-								<label>
-									<input type="radio" name="iman"/>Не уверен
-								</label>
+								<div class="text-center">
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-name" id="id1"/><span class="checkbox-custom"></span><span class="label">Я человек</span>
+									</label>
+									<p>Вы точно не робот?</p>
+									<label>
+										<input class="radio" type="radio" name="radio-name" id="id2"/><span class="radio-custom"></span><span class="label">Да</span>
+									</label>
+									<label>
+										<input class="radio" type="radio" name="radio-name" id="id3"/><span class="radio-custom"></span><span class="label">Не уверен</span>
+									</label>
+								</div>
 							</form>
 						</div>
 						<div class="form__buttons"><a class="form__btn" href="/">На главную</a><a class="form__btn">Войти</a></div>
@@ -41,7 +43,7 @@
 				</main>
 			</div>
 			<footer class="footer">
-				<p class="text-center">© Елена Куклина | Создано с любовью в LoftSchool | 2017</p>
+				<div class="footer__copyright">© Елена Куклина | Создано с любовью в LoftSchool | 2017</div>
 			</footer>
 		</div>
 	</body>
