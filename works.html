@@ -16,14 +16,37 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
-		<div class="main-menu" id="main-menu"><a class="icon-close icon-close_right" href="#">
-				<svg class="svg_white" viewBox="0 0 36 36">
-					<use xlink:href="assets/img/sprite.svg#close"></use>
-				</svg></a>
-			<div class="main-menu__body">
-				<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
-				</nav>
+		<div class="preloader" id="preloader">
+			<div class="preloader__spinnre">
+				<div class="preloader__percents" id="percrnts">0</div>
+				<div class="preloader__animation">
+					<div class="preloader__line line-1">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-2">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-3">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="main-menu" id="main-menu">
+			<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
+			</nav>
 		</div>
 		<div class="wrapper">
 			<div class="content content_page">
@@ -42,13 +65,11 @@
 									<svg class="svg_white-green" viewBox="0 0 31 22">
 										<use xlink:href="assets/img/sprite.svg#in"></use>
 									</svg></a></li>
-						</ul><a class="arrow-down arrow_head" href="#">
+						</ul><a class="arrow_down arrow_head" href="#">
 							<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
 								<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-							</svg></a><a class="hamburger" href="#main-menu">
-													<svg class="svg_white" viewBox="0 0 40 35">
-														<use xlink:href="assets/img/sprite.svg#hamburger"></use>
-													</svg></a>
+							</svg></a>
+						<div class="hamburger" id="toggle" data-menu-id="main-menu"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
 					</div>
 					<div class="header__content header__content_about">
 						<div class="user"><img class="userpic img_circle" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/><span class="user__name">Елена Куклина</span><span class="user__desc">Личный сайт веб разработчика</span>
@@ -70,22 +91,18 @@
 						</div>
 						<div class="slider__nav">
 							<div class="slider__btn"><img src="/assets/img/works/work-1.png" alt="test">
-													<div class="slider__btn_top prew">
-														<div class="slider_arrow ">
-																					<svg class="svg_white" viewBox="0 0 25.18 16.164">
-																						<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-																					</svg>
-														</div>
-													</div>
+								<div class="slider__btn_top prew"><a class="arrow_down arrow_slider" href="#">
+										<svg class="svg_white" viewBox="0 0 25.18 16.164">
+											<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+										</svg></a>
+								</div>
 							</div>
 							<div class="slider__btn"><img src="/assets/img/works/work-3.png" alt="test">
-													<div class="slider__btn_top next">
-														<div class="slider_arrow arrow_up">
-																					<svg class="svg_white" viewBox="0 0 25.18 16.164">
-																						<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-																					</svg>
-														</div>
-													</div>
+								<div class="slider__btn_top next"><a class="arrow_up arrow_slider" href="#">
+										<svg class="svg_white" viewBox="0 0 25.18 16.164">
+											<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+										</svg></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -107,19 +124,18 @@
 								</div>
 							</div>
 						</div>
-						<div class="section_contacts">
-							<div class="form form_light">
-								<div class="form__content">
-									<h2 class="subtitle">Связаться со мной</h2>
-									<form>
-										<input class="input" value="Test">
-										<input class="input">
-										<textarea class="textarea"></textarea>
+						<section class="section_contacts">
+							<div class="form form-contactMe">
+								<div class="form__content"><span class="subtitle">Связаться со мной</span>
+									<form class="login-form">
+										<input class="input input_padding" value="Test"/>
+										<input class="input input_padding"/>
+										<textarea class="textarea input_padding"></textarea>
 									</form>
 								</div>
 								<div class="form__buttons"><a class="form__btn">Отправить</a><a class="form__btn">Очистить</a></div>
 							</div>
-						</div>
+						</section>
 					</section>
 				</main>
 			</div>
@@ -138,17 +154,17 @@
 					</nav>
 					<ul class="socials">
 						<li class="socials__item"><a class="socials__link socials__link_vk" href="https://vk.com/id48174114" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#vk"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#vk"></use>
+								</svg></a></li>
 						<li class="socials__item"><a class="socials__link socials__link_github" href="https://github.com/Leneli" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#github"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#github"></use>
+								</svg></a></li>
 						<li class="socials__item"><a class="socials__link socials__link_in" href="https://www.linkedin.com/in/elena-lehmann-9310aa112/" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#in"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#in"></use>
+								</svg></a></li>
 					</ul>
 				</div>
 				<div class="footer__col_big">

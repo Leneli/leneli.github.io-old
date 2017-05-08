@@ -16,14 +16,37 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
-		<div class="main-menu" id="main-menu"><a class="icon-close icon-close_right" href="#">
-				<svg class="svg_white" viewBox="0 0 36 36">
-					<use xlink:href="assets/img/sprite.svg#close"></use>
-				</svg></a>
-			<div class="main-menu__body">
-				<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
-				</nav>
+		<div class="preloader" id="preloader">
+			<div class="preloader__spinnre">
+				<div class="preloader__percents" id="percrnts">0</div>
+				<div class="preloader__animation">
+					<div class="preloader__line line-1">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-2">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-3">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="main-menu" id="main-menu">
+			<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
+			</nav>
 		</div>
 		<div class="wrapper">
 			<div class="content content_page">
@@ -42,13 +65,11 @@
 									<svg class="svg_white-green" viewBox="0 0 31 22">
 										<use xlink:href="assets/img/sprite.svg#in"></use>
 									</svg></a></li>
-						</ul><a class="arrow-down arrow_head" href="#">
+						</ul><a class="arrow_down arrow_head" href="#">
 							<svg class="svg_white-opacity" viewBox="0 0 25.18 16.164">
 								<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-							</svg></a><a class="hamburger" href="#main-menu">
-													<svg class="svg_white" viewBox="0 0 40 35">
-														<use xlink:href="assets/img/sprite.svg#hamburger"></use>
-													</svg></a>
+							</svg></a>
+						<div class="hamburger" id="toggle" data-menu-id="main-menu"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
 					</div>
 					<div class="header__content header__content_about">
 						<div class="user"><img class="userpic img_circle" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/><span class="user__name">Елена Куклина</span><span class="user__desc">Личный сайт веб разработчика</span>
@@ -60,112 +81,112 @@
 					</svg>
 				</header>
 				<main class="main">
-					<section class="about">
-						<section class="about__item_l section-bg_about">
-							<div class="about__item_up">
+					<div class="about">
+						<section class="about__user">
+							<div class="about__user_title">
 								<h1 class="title_about">Обо мне</h1>
 							</div>
-							<div><img class="userpic undefined" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/>
+							<div class="about__user_info"><img class="userpic about_userpic" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/>
 								<h2 class="subtitle">Кто я</h2>
-								<div class="about-text">
-									<p class="paragraph">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-								</div>
+								<p class="paragraph">Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
 							</div>
 						</section>
-						<section class="about__item_r section-bg_skills">
-							<h2 class="subtitle">Чем я могу быть вам полезен</h2>
-							<p class="paragraph">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</p><span class="skills__group-name">Frontend</span>
-							<ul class="skills">
-								<li class="skills__item"><span class="skills__name">HTML5</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">CSS3</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">JavaScript &amp; jQuert</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-							</ul><span class="skills__group-name">Backend</span>
-							<ul class="skills">
-								<li class="skills__item"><span class="skills__name">PHP</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-10" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">mySQL</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">Node.js &amp; npm</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-35" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">Mongo.db</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-20" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-							</ul><span class="skills__group-name">WorkFlow</span>
-							<ul class="skills">
-								<li class="skills__item"><span class="skills__name">Git</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">Gulp</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-								<li class="skills__item"><span class="skills__name">Bower</span>
-									<svg class="circles" viewbox="0 0 110 110">
-										<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-										<circle class="circle__second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-									</svg>
-								</li>
-							</ul>
+						<section class="about__skills">
+							<h2 class="subtitle">Чем я могу быть вам полезна</h2>
+							<p class="paragraph">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+							<div class="about__skills_position"><span class="skills__group-name">Frontend</span>
+								<ul class="skills">
+									<li class="skills__item"><span class="skills__name">HTML5</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">CSS3</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">JavaScript &amp; jQuert</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+								</ul><span class="skills__group-name">Backend</span>
+								<ul class="skills">
+									<li class="skills__item"><span class="skills__name">PHP</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-10" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">mySQL</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">Node.js &amp; npm</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-35" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">Mongo.db</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-20" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+								</ul><span class="skills__group-name">WorkFlow</span>
+								<ul class="skills">
+									<li class="skills__item"><span class="skills__name">Git</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-70" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">Gulp</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+									<li class="skills__item"><span class="skills__name">Bower</span>
+										<svg class="circles" viewbox="0 0 110 110">
+											<circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+											<circle class="circle__second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+										</svg>
+									</li>
+								</ul>
+							</div>
 						</section>
-					</section>
-					<section class="section_contacts">
+					</div>
+					<section class="section_contacts" style="background: #6c9c5a;">
 						<div class="contacts">
 							<h2 class="subtitle">Контакты</h2>
 							<ul class="contacts__ul">
 								<li class="contacts__li">
-															<svg class="contacts__icon" viewBox="0 0 24 24">
-																<use xlink:href="assets/img/sprite.svg#skype"></use>
-															</svg><span class="contacts__str">live:liafell.lansera</span>
+									<svg class="contacts__icon" viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#skype"></use>
+									</svg><span class="contacts__str">live:liafell.lansera</span>
 								</li>
 								<li class="contacts__li">
-															<svg class="contacts__icon" viewBox="0 0 23 16.391">
-																<use xlink:href="assets/img/sprite.svg#envelope2"></use>
-															</svg><span class="contacts__str">liafell.lansera@gmail.com</span>
+									<svg class="contacts__icon" viewBox="0 0 23 16.391">
+										<use xlink:href="assets/img/sprite.svg#envelope2"></use>
+									</svg><span class="contacts__str">liafell.lansera@gmail.com</span>
 								</li>
 								<li class="contacts__li">
-															<svg class="contacts__icon" viewBox="0 0 16.492 20.947">
-																<use xlink:href="assets/img/sprite.svg#phone2"></use>
-															</svg><span class="contacts__str">+7 961 656 16 41</span>
+									<svg class="contacts__icon" viewBox="0 0 16.492 20.947">
+										<use xlink:href="assets/img/sprite.svg#phone2"></use>
+									</svg><span class="contacts__str">+7 961 656 16 41</span>
 								</li>
 								<li class="contacts__li">
-															<svg class="contacts__icon" viewBox="0 0 15.151 21.654">
-																<use xlink:href="assets/img/sprite.svg#map_marker"></use>
-															</svg><span class="contacts__str">Россия, г.Волгоград</span>
+									<svg class="contacts__icon" viewBox="0 0 15.151 21.654">
+										<use xlink:href="assets/img/sprite.svg#map_marker"></use>
+									</svg><span class="contacts__str">Россия, г.Волгоград</span>
 								</li>
 							</ul>
 						</div>
@@ -182,17 +203,17 @@
 					</nav>
 					<ul class="socials">
 						<li class="socials__item"><a class="socials__link socials__link_vk" href="https://vk.com/id48174114" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#vk"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#vk"></use>
+								</svg></a></li>
 						<li class="socials__item"><a class="socials__link socials__link_github" href="https://github.com/Leneli" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#github"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#github"></use>
+								</svg></a></li>
 						<li class="socials__item"><a class="socials__link socials__link_in" href="https://www.linkedin.com/in/elena-lehmann-9310aa112/" target="_blank">
-														<svg class="svg_white-opacity" viewBox="0 0 31 22">
-															<use xlink:href="assets/img/sprite.svg#in"></use>
-														</svg></a></li>
+								<svg class="svg_white-opacity" viewBox="0 0 31 22">
+									<use xlink:href="assets/img/sprite.svg#in"></use>
+								</svg></a></li>
 					</ul>
 				</div>
 				<div class="footer__col_big">

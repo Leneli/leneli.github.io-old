@@ -16,6 +16,34 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
+		<div class="preloader" id="preloader">
+			<div class="preloader__spinnre">
+				<div class="preloader__percents" id="percrnts">0</div>
+				<div class="preloader__animation">
+					<div class="preloader__line line-1">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-2">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-3">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="wrapper bg_forest-full">
 			<div class="content blog_centerd"><span class="authorize authorize_top" id="authorize" data-flip-id="login">Авторизоваться</span>
 				<main>
@@ -48,13 +76,17 @@
 							<div class="form form_dark flip__back">
 								<div class="form__content"><span class="subtitle">Авторизуйтесь</span>
 									<form class="login-form">
-										<input class="input" type="text" value="login"/>
-										<input class="input" type="password" value="password"/>
-										<div class="text-center">
-											<label>
-												<input class="checkbox" type="checkbox" name="checkbox-name" id="id1"/><span class="checkbox-custom"></span><span class="label">Я человек</span>
-											</label>
-											<p>Вы точно не робот?</p>
+										<div class="input input_login">
+											<input class="input_hidden" type="text" placeholder="Логин"/>
+										</div>
+										<div class="input input_passw">
+											<input class="input_hidden" type="password" placeholder="Пароль"/>
+										</div>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-name" id="id1"/><span class="checkbox-custom"></span><span class="label">Я человек</span>
+										</label>
+										<p>Вы точно не робот?</p>
+										<div class="form__captcha_radio">
 											<label>
 												<input class="radio" type="radio" name="radio-name" id="id2"/><span class="radio-custom"></span><span class="label">Да</span>
 											</label>

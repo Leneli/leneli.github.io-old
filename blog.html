@@ -16,14 +16,37 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
-		<div class="main-menu" id="main-menu"><a class="icon-close icon-close_right" href="#">
-				<svg class="svg_white" viewBox="0 0 36 36">
-					<use xlink:href="assets/img/sprite.svg#close"></use>
-				</svg></a>
-			<div class="main-menu__body">
-				<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
-				</nav>
+		<div class="preloader" id="preloader">
+			<div class="preloader__spinnre">
+				<div class="preloader__percents" id="percrnts">0</div>
+				<div class="preloader__animation">
+					<div class="preloader__line line-1">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-2">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+					<div class="preloader__line line-3">
+								<svg class="svg-stroke_white" width="100%" height="14" viewbox="0 36 80 14">
+									<g>
+										<path fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+									</g>
+								</svg>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="main-menu" id="main-menu">
+			<nav class="menu menu_vertical"><a class="main-menu__item" href="/works.html">Мои работы</a><a class="main-menu__item" href="/about.html">Обо мне</a><a class="main-menu__item" href="/blog.html">Блог</a><a class="main-menu__item" href="/index.html">Авторизация</a>
+			</nav>
 		</div>
 		<div class="wrapper">
 			<div class="content content_page">
