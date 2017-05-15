@@ -72,7 +72,7 @@
 						<div class="hamburger" id="toggle" data-menu-id="main-menu"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
 					</div>
 					<div class="header__content header__content_about">
-						<div class="user"><img class="userpic img_circle" src="/assets/img/user/user4.jpg" alt="Елена Куклина"/><span class="user__name">Елена Куклина</span><span class="user__desc">Личный сайт веб разработчика</span>
+						<div class="user"><img class="userpic img_circle" src="/assets/img/user/user1.jpg" alt="Елена Куклина"/><span class="user__name">Елена Куклина</span><span class="user__desc">Личный сайт веб разработчика</span>
 						</div>
 					</div>
 					<svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
@@ -84,21 +84,21 @@
 					<section class="section-bg_works">
 						<h1 class="title_works">Мои работы</h1>
 					</section>
-					<div class="slider">
-						<div class="slider__picture"><img src="/assets/img/works/work-2.png" alt="test"></div>
+					<div class="slider" id="slider">
+						<div class="slider__picture"><img id="display" src="" alt="" data-index=""></div>
 						<div class="slider__desc">
-							<h2 class="subtitle work__title">Сайт школы онлайн образования</h2><span class="work__tech">HTML, CSS, JavaScript</span><a class="work__link" href="#">Просмотреть сайт</a>
+							<h2 class="subtitle work__title" id="header"></h2><span class="work__tech" id="description"></span><a class="work__link" href="#" id="siteLink">Просмотреть сайт</a>
 						</div>
 						<div class="slider__nav">
-							<div class="slider__btn"><img src="/assets/img/works/work-1.png" alt="test">
-								<div class="slider__btn_top prew"><a class="arrow_down arrow_slider" href="#">
+							<div class="slider__btn" id="btnPrew"><img id="btnPrewImg" src="" alt="" data-index="">
+								<div class="slider__btn_top prew"><a class="arrow_down arrow_slider" href="#" onclick="event.preventDefault()">
 										<svg class="svg_white" viewBox="0 0 25.18 16.164">
 											<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
 										</svg></a>
 								</div>
 							</div>
-							<div class="slider__btn"><img src="/assets/img/works/work-3.png" alt="test">
-								<div class="slider__btn_top next"><a class="arrow_up arrow_slider" href="#">
+							<div class="slider__btn" id="btnNext"><img id="btnNextImg" src="" alt="" data-index="">
+								<div class="slider__btn_top next"><a class="arrow_up arrow_slider" href="#" onclick="event.preventDefault()">
 										<svg class="svg_white" viewBox="0 0 25.18 16.164">
 											<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
 										</svg></a>
@@ -124,7 +124,7 @@
 								</div>
 							</div>
 						</div>
-						<section class="section_contacts">
+						<section class="section_contacts-me">
 							<div class="form form-contactMe">
 								<div class="form__content"><span class="subtitle">Связаться со мной</span>
 									<form class="login-form">
